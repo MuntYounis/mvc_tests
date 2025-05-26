@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <h1>All Categories</h1>
+    <a href="/categories/create">Add</a>
+    <p>this is fullstack</p>
+    @foreach(var item in @Model)
+    {
+        <h2>hello @item.Name</h2>
+        <a href="/categories/details/@item.Id">Details</a>
+        <a href="/categories/delete/@item.Id">Delete</a>
+    }
+</body>
+
+</html>

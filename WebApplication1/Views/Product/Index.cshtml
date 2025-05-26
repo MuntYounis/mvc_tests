@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Hello this is the Index Page</h1>
+        <a href="/Product/Create">Create Product</a>
+        @foreach (var item in @Model)
+    {
+        <h2>hello @item.Name</h2>
+        <a href="/product/details/@item.Id">Details</a>
+        <a href="/product/delete/@item.Id">Delete</a>
+    }
+    </body>
+    </html>

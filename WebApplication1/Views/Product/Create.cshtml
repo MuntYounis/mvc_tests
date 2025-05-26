@@ -1,0 +1,21 @@
+﻿@model Product
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+    <h2> Create Product</h2>
+    <form method="post" action="/product/create">
+        <div class="mb-2">
+            <input type="text" name="Name" class="form-control" placeholder="product name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div>
+            <textarea name="Description" class="form-control" placeholder="product Description"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+        <button class="btn btn-outline-primary">Save</button>
+    </form>
+    </body>
+    </html>
